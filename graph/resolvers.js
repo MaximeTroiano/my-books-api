@@ -1,9 +1,9 @@
-import graphMockdata from "./mockdata.js";
+import { getBooks } from "../controllers/books.js";
 
 // fetch functions for the different queries
 const graphResolvers = {
 	Query: {
-		books: () => graphMockdata.books,
+		books: getBooks,
 	},
 };
 

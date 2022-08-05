@@ -5,12 +5,13 @@ import { gql } from "apollo-server";
  */
 const graphSchemas = gql`
 	type Book {
+		id: String
 		title: String
-		author: String
+		authors: [String]
 	}
 
 	type Query {
-		books: [Book]
+		books(q: String!): [Book]
 	}
 `;
 
