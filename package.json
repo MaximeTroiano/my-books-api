@@ -1,15 +1,17 @@
 {
-  "name": "my-books-api",
-  "version": "1.0.0",
-  "description": "A sample API that allows to read and store books",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "apollo-server": "^3.10.0",
-    "graphql": "^16.5.0"
-  }
+	"name": "my-books-api",
+	"version": "1.0.0",
+	"description": "A sample API that allows to read and store books",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "nodemon src/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"apollo-server": "^3.10.0",
+		"graphql": "^16.5.0"
+	}
 }
