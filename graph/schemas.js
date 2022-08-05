@@ -8,10 +8,15 @@ const graphSchemas = gql`
 		id: String
 		title: String
 		authors: [String]
+		image: String
+		language: String
+		link: String
+		price: Float
+		currency: String
 	}
 
 	type Query {
-		books(q: String!): [Book]
+		books(q: String!, start: Int, limit: Int): [Book]
 	}
 `;
 
